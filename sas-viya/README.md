@@ -74,7 +74,9 @@ SAS Viya Quickstart Template for Azure creates three instances, including:
 * 1 VM for administration, the Ansible controller
 * 1 VM for the SAS Viya services
 
-The available licensed core sizes are: 
+**Note:** To optimize thread utilization on the CAS controller VM, we recommend that you configure your machine with twice the number of cores as the amount that you are licensed for. In addition, we recommend that you use the Esv3-series memory optimized VMs. For more information, see [Memory optimized virtual machine sizes](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-memory) and [Important Performance Considerations When Moving SAS to a Public Cloud](https://www.sas.com/content/dam/SAS/support/en/sas-global-forum-proceedings/2019/3363-2019.pdf).
+
+Here are some recommended VM sizes: 
 
 | Licensed Cores  | Virtual Machine| SKU	Memory(RAM) | Maximum Dataset Size | Cache Size |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
