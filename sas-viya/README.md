@@ -16,6 +16,9 @@ This README for  SAS Viya Quickstart Template for Azure is used to deploy the fo
 This Quickstart is a reference architecture for users who want to deploy the SAS platform, using microservices and other cloud-friendly technologies. By deploying the SAS platform in Azure, you get SAS analytics, data visualization, and machine-learning capabilities in an Azure-validated environment. 
 
 For assistance with SAS software, contact  [SAS Technical Support](https://support.sas.com/en/technical-support.html).   When you contact support, you will be required to provide information, such as your SAS site number, company name, email address, and phone number, that identifies you as a licensed SAS software customer. 
+
+**Note:** For the current status of this Quickstart, click [here](https://github.com/sassoftware/quickstart-sas-viya-azure/tree/master/sas-viya) to redirect to the SAS repository.
+
  
 ## Contents
 1. [Solution Summary](#Summary)
