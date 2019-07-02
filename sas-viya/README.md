@@ -23,6 +23,7 @@ For assistance with SAS software, contact  [SAS Technical Support](https://suppo
 1. [Prerequisites](#Prerequisites)
     1. [Upload the License File to an Azure Blob](#License)
     1. [Create a Mirror Repository](#Mirror)
+    1. [Upload the Entire Mirror to Azire Blob Storage](#MirrortoBlob)
 1. [Best Practices](#Best_Practices)
 1. [Deployment Steps](#Deployment)
 1. [Additional Deployment Details](#deployment-details)
@@ -126,6 +127,7 @@ To use a mirror repository, create a mirror repository as documented in ["Create
 
 **Note:** For the deployment to recognize the mirror directory, the URL must end with a "/" directly before the SAS key.
 
+<a name="MirrortoBlob"></a>
 ### Upload the Entire Mirror to Azure Blob Storage 
 1. Upload the mirror:
 ```
@@ -134,12 +136,6 @@ az storage blob upload-batch --account-name "$STORAGE_ACCOUNT" --account-key "$S
 2. Create a SAS key that has (at a minimum) List blob and Get blob privileges on the blob store.
 
 3. During deployment, set the DeploymentMirror parameter to the URL of the folder in the Azure blob that is qualified by that SAS key.
-
-
-### Compress the Folder and Upload to Azure Blob or Another Storage Location That Is Secure
-1. Zip the entire folder as a compressed tar archive. For example, .tar.gz/.tgz. 
-2. Upload the compressed tar archive to Azure blob storage or another storage location that is accessible from the internet and can be secured. 
-3. During deployment, set the DeploymentMirror parameter to the authenticated URL. In the case of blob storage, the URL is the path URL to the blob that is qualified by a SAS key.
 
 <a name="Best-Practices"></a>
 ## Best Practices when Deploying SAS Viya on Azure
