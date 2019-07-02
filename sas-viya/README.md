@@ -17,6 +17,8 @@ This Quickstart is a reference architecture for users who want to deploy the SAS
 
 For assistance with SAS software, contact  [SAS Technical Support](https://support.sas.com/en/technical-support.html).   When you contact support, you will be required to provide information, such as your SAS site number, company name, email address, and phone number, that identifies you as a licensed SAS software customer. 
  
+**Note:** For the current operational status of this Quickstart, click [here](https://github.com/sassoftware/quickstart-sas-viya-azure/tree/master/sas-viya) to redirect to the SAS repository.
+
 ## Contents
 1. [Solution Summary](#Summary)
     1. [Costs and Licenses](#Costs)
