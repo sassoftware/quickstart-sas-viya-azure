@@ -46,3 +46,7 @@ docker
 
 # Pycharm IDE files #
 #####################
+
+# Common Files #
+################
+common/
