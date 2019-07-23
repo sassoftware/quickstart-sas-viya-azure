@@ -1,7 +1,7 @@
-# quickstart-sas-viya-azure
-Azure QuickStart development repository for Viya
+# Azure Quickstart for Viya 3.4
+This is the Azure QuickStart development repository for SAS Viya.
 
-All deployment code is located in [/sas-viya](/sas-viya)
+All deployment code is located in the [/sas-viya](/sas-viya) directory.
 
 # How to Contribute
 
