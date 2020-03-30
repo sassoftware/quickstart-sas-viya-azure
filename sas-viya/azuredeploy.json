@@ -1635,6 +1635,19 @@
       "apiVersion": "2019-09-01",
       "location": "[parameters('location')]",
       "properties": {}
+    },
+    {
+    "apiVersion": "2019-10-01",
+    "name": "pid-0d27c57e-54aa-50c4-a376-14293f5614d2",
+    "type": "Microsoft.Resources/deployments",
+    "properties": {
+        "mode": "Incremental",
+        "template": {
+            "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+            "contentVersion": "1.0.0.0",
+            "resources": []
+        }
+      }
     }
   ],
   "outputs": {
