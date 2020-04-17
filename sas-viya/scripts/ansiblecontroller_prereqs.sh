@@ -44,9 +44,10 @@ RET=$?
 set -e
 if [[ "$RET" -ne 0 ]]; then
     /opt/rh/rh-python36/root/usr/bin/az storage share create --name ${azure_storage_files_share} --connection-string "DefaultEndpointsProtocol=https;EndpointSuffix=core.usgovcloudapi.net;AccountName=${azure_storage_account};AccountKey=${azure_storage_files_password}"
-    cifs_server_fqdn="${azure_storage_account}.file.core.windows.net"
-else
     cifs_server_fqdn="${azure_storage_account}.file.core.usgovcloudapi.net"
+else
+    cifs_server_fqdn="${azure_storage_account}.file.core.windows.net"
+
 fi
 
 echo "setup cifs"
