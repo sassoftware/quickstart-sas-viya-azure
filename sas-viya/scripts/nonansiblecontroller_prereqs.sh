@@ -22,7 +22,11 @@ CIFS_SEMAPHORE_DIR="${CIFS_MOUNT_POINT}/setup/readiness_flags"
 CIFS_ANSIBLE_KEYS="${CIFS_MOUNT_POINT}/setup/ansible_key"
 #CIFS_ANSIBLE_INVENTORIES_DIR="${CIFS_MOUNT_POINT}/setup/ansible/inventory"
 #CIFS_ANSIBLE_GROUPS_DIR="${CIFS_MOUNT_POINT}/setup/ansible/groups"
-cifs_server_fqdn="${azure_storage_account}.file.core.windows.net"
+if curl -H Metadata:true "http://169.254.169.254/metadata/instance?api-version=2019-06-01" | grep -q AzurePublicCloud; then
+    cifs_server_fqdn="${azure_storage_account}.file.core.windows.net"
+else
+    cifs_server_fqdn="${azure_storage_account}.file.core.usgovcloudapi.net"
+fi
 
 yum install -y yum-utils
 # on 4/17, we started having intermittent issues with this repository being present for updates, so configuring to skip
