@@ -21,6 +21,9 @@ if [ -z "$PRIMARY_USER" ]; then
 	PRIMARY_USER="sas"
 fi
 
+# Installing pip version 20.3.4 to fix python 2 depreciation in lastest version
+curl -O https://bootstrap.pypa.io/2.7/get-pip.py && python get-pip.py &> /dev/null
+
 # to workaround the strange issues azure has had with certs in yum, run yum update twice.
 yum update -y rhui-azure-rhel7
 #yum update -y --exclude=WALinuxAgent
