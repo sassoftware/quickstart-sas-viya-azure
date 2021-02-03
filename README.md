@@ -1,4 +1,8 @@
 # SAS Viya on the Azure Cloud
+
+**This is a deprecated repository, and is no longer being maintained. See https://github.com/sassoftware/azure-quickstart-templates/tree/master/sas-viya for the currently maintained, up-to-date Azure Quickstart for SAS Viya.**
+
+
 This is the Azure QuickStart development repository for SAS Viya.
 
 All deployment code is located in the [/sas-viya](/sas-viya) directory.
