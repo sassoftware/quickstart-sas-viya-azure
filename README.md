@@ -1,3 +1,5 @@
+## This repository has been archived. The current version of this quickstart has relocated to the [azure-quickstart-templates](https://github.com/sassoftware/azure-quickstart-templates).
+
 # SAS Viya on the Azure Cloud
 
 **This is a deprecated repository, and is no longer being maintained. See https://github.com/sassoftware/azure-quickstart-templates/tree/master/sas-viya for the currently maintained, up-to-date Azure Quickstart for SAS Viya.**
